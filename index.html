@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Henry N. Nyoike is an Electrical and Electronic Engineering student in Nairobi who builds machine learning from scratch. Projects: MlBites, CSV Automation Engine, a Homer and Bart CNN classifier, and a churn prediction pipeline.">
+<meta name="author" content="Henry N. Nyoike">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171815" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Henry N. Nyoike | Software and AI Engineering">
+<meta property="og:description" content="I build machine learning from scratch, then prove it works. Four public projects, with the code to check.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f5f4a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23f6f3ec'%3EH%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Henry Ndirangu Nyoike", "alternateName": "Henry N. Nyoike", "email": "mailto:henrynyoikedev@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE"}, "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Machakos"}, "knowsAbout": ["Machine learning", "Python", "PyTorch", "scikit-learn", "Linux"], "sameAs": ["https://github.com/henrynyoike", "https://www.linkedin.com/in/henry-nyoike-a56b54379"]}</script>
+<title>Henry N. Nyoike | Software and AI Engineering</title>
+<style>
+:root{--bg:#f6f3ec;--ink:#1c1b19;--mute:#625e55;--line:#d6d0c3;--acc:#1f5f4a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171815;--ink:#ece8dd;--mute:#a29d90;--line:#35352f;--acc:#7fcfae}}
+:root[data-theme="dark"]{--bg:#171815;--ink:#ece8dd;--mute:#a29d90;--line:#35352f;--acc:#7fcfae}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.7 Georgia,"Iowan Old Style","Times New Roman",serif}
+a{color:var(--acc);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:780px;margin:0 auto;padding:0 24px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.bar b{font-size:1.7rem;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+.bar nav{display:flex;gap:20px;font-size:1rem}
+h1{font-size:clamp(1.9rem,5vw,2.7rem);line-height:1.15;margin:0 0 14px;letter-spacing:-.01em}
+h2{font-size:1.5rem;margin:0 0 14px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h3{font-size:1.2rem;margin:0}
+section{padding-top:52px}
+p{margin:0 0 12px}
+.intro{display:flex;align-items:center;gap:34px;padding-top:44px}
+.av{display:block;flex:none;width:clamp(120px,22vw,160px);height:clamp(120px,22vw,160px);border-radius:50%;object-fit:cover;border:3px solid var(--ink)}
+.intro p{color:var(--mute)}
+.facts{margin:34px 0 0;display:grid;grid-template-columns:110px 1fr;gap:8px 18px;font-size:1rem;border-top:1px solid var(--line);padding-top:18px}
+.facts dt{color:var(--mute)}
+.facts dd{margin:0}
+.work article{padding:20px 0;border-bottom:1px solid var(--line)}
+.work article:first-of-type{padding-top:6px}
+.meta{color:var(--mute);font-size:.95rem;font-style:italic;margin:2px 0 8px}
+.work ul{margin:6px 0 10px;padding-left:1.2em}
+.work li{margin:3px 0}
+.code{font-size:.98rem;margin:0}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:flex;justify-content:space-between;gap:18px;padding:8px 0;border-bottom:1px dotted var(--line)}
+.list span{color:var(--mute);text-align:right;font-size:.95rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+footer{padding:48px 0 56px;color:var(--mute);font-size:.95rem}
+@media (max-width:640px){
+  .intro{flex-direction:column;align-items:flex-start;gap:20px}
+  .cols{grid-template-columns:1fr;gap:0}
+  .facts{grid-template-columns:1fr;gap:0}
+  .facts dd{margin-bottom:10px}
+  .bar nav{display:none}
+  .bar b{font-size:1.4rem}
+}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 14px;z-index:10}
+.skip:focus{left:8px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+::selection{background:var(--acc);color:var(--bg)}
+@media print{.bar,.skip{display:none}body{background:#fff;color:#000;font-size:11pt}a{color:#000}.work article,.list li{break-inside:avoid}section{padding-top:22px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#work">Skip to content</a>
+<div class="bar"><div class="wrap">
+  <b>Henry N. Nyoike</b>
+  <nav aria-label="Sections"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</div></div>
+
+<header class="wrap">
+  <div class="intro">
+    <img class="av" width="160" height="160" alt="Profile picture: illustration of a retro computer showing binary code" src="data:image/png;base64,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">
+    <div>
+      <h1>I build machine learning from scratch, then prove it works.</h1>
+      <p>I'm a first-year Electrical and Electronic Engineering student in Nairobi, looking for software and AI engineering work. Four of my projects are public on GitHub, and you can read the code behind every claim on this page.</p>
+      <p><a href="mailto:henrynyoikedev@gmail.com">Email me</a>, or find me on <a href="https://www.linkedin.com/in/henry-nyoike-a56b54379" rel="noopener">LinkedIn</a> and <a href="https://github.com/henrynyoike" rel="noopener">GitHub</a>.</p>
+    </div>
+  </div>
+  <dl class="facts">
+    <dt>Name</dt><dd>Henry Ndirangu Nyoike</dd>
+    <dt>Based in</dt><dd>Nairobi, Kenya</dd>
+    <dt>Studying</dt><dd>B.Sc. Electrical and Electronic Engineering, University of Machakos (2026 to 2031)</dd>
+    <dt>Looking for</dt><dd>Software and AI engineering roles</dd>
+    <dt>Works with</dt><dd>Python, NumPy, scikit-learn, PyTorch, Git, Docker, Linux</dd>
+    <dt>Email</dt><dd><a href="mailto:henrynyoikedev@gmail.com">henrynyoikedev@gmail.com</a></dd>
+  </dl>
+</header>
+
+<main class="wrap" id="main">
+<section class="work" id="work">
+  <h2>Work</h2>
+
+  <article>
+    <h3>MlBites</h3>
+    <p class="meta">Python, NumPy. A machine learning library, written from scratch.</p>
+    <p>I wanted to understand the algorithms, so I wrote them myself with a scikit-learn-style interface and only NumPy.</p>
+    <ul>
+      <li>Logistic regression, linear regression, KNN, k-means, Gaussian Naive Bayes, and decision trees.</li>
+      <li>I ran each one against scikit-learn on the same data. The results match to within small numerical differences.</li>
+    </ul>
+    <p class="code"><a href="https://github.com/henrynyoike/mlbites" rel="noopener">github.com/henrynyoike/mlbites</a></p>
+  </article>
+
+  <article>
+    <h3>CSV Automation Engine</h3>
+    <p class="meta">Python, Streamlit, pandas, scikit-learn, Docker. A web app.</p>
+    <p>Upload a CSV, see what's wrong with it, fix it, chart it, and download the cleaned file.</p>
+    <ul>
+      <li>Shows row and column counts, missing values, and duplicates as soon as a file is uploaded.</li>
+      <li>Removes duplicates and missing values, fills gaps with column means, normalizes numbers, and encodes categories.</li>
+      <li>Draws line, bar, area, scatter, and map charts. The processing code is its own package, and there is a Dockerfile.</li>
+    </ul>
+    <p class="code"><a href="https://github.com/henrynyoike/csv-automation-engine" rel="noopener">github.com/henrynyoike/csv-automation-engine</a></p>
+  </article>
+
+  <article>
+    <h3>Homer and Bart Classifier</h3>
+    <p class="meta">Python, PyTorch, torchvision. An image classifier.</p>
+    <p>A small CNN that tells Homer Simpson from Bart Simpson. I trained it for 15 epochs on 215 images and tested it on 53 it had never seen: 77% accuracy, 0.74 precision, 0.67 recall, and an F1-score of 0.70.</p>
+    <p class="code"><a href="https://github.com/henrynyoike/homer-bart-cnn-classifier" rel="noopener">github.com/henrynyoike/homer-bart-cnn-classifier</a></p>
+  </article>
+
+  <article>
+    <h3>Customer Churn Prediction Pipeline</h3>
+    <p class="meta">Python, scikit-learn, YAML. Still in progress.</p>
+    <p>A pipeline for the Telco dataset of 7,043 customers, split into separate modules for loading, cleaning, validation, and preprocessing. Those parts are finished. Next I'll add the train, validation, and test split, then compare logistic regression with a random forest.</p>
+    <p class="code"><a href="https://github.com/henrynyoike/customer_churn_pipeline" rel="noopener">github.com/henrynyoike/customer_churn_pipeline</a></p>
+  </article>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I started university in September 2026. Outside my coursework I teach myself programming, Linux, and AI engineering, and most of what I know comes from building things and checking them against something trusted.</p>
+  <p>I've taken part in three hackathons in Nairobi, I'm a member of the Huawei Developer Club at school, and I finished a Basic AI course in January 2026. I'm also interested in financial markets, open source, and electronics.</p>
+  <div class="cols" style="margin-top:26px">
+    <div>
+      <h3>Skills</h3>
+      <ul class="list">
+        <li>Programming<span>Python, C, Go</span></li>
+        <li>Machine learning<span>scikit-learn, PyTorch, PySpark, NumPy, pandas</span></li>
+        <li>Tools<span>Git, GitHub, Linux, Docker, Streamlit</span></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Hackathons</h3>
+      <ul class="list">
+        <li>Wikimania Hackathon<span>Nairobi, Aug 2025</span></li>
+        <li>Cardano Hackathon<span>Blockchain Centre NBO, Feb 2026</span></li>
+        <li>n8n Nairobi Hackathon<span>Workstyle Africa, Mar 2026</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>If you're hiring for software or AI engineering and my work looks like a fit, write to me at <a href="mailto:henrynyoikedev@gmail.com">henrynyoikedev@gmail.com</a>. I'm also on <a href="https://www.linkedin.com/in/henry-nyoike-a56b54379" rel="noopener">LinkedIn</a>.</p>
+</section>
+</main>
+<footer><div class="wrap">Henry Ndirangu Nyoike, Nairobi, Kenya</div></footer>
+</body>
+</html>
