@@ -9,12 +9,12 @@
 <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#171815" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Henry N. Nyoike | Software and AI Engineering">
-<meta property="og:description" content="Hi ,I'm Henry">
+<meta property="og:title" content="Henry N. Nyoike | Software, Machine Learning and AI Engineering">
+<meta property="og:description" content="Hi, I'm Henry">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f5f4a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23f6f3ec'%3EH%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Henry Ndirangu Nyoike", "alternateName": "Henry N. Nyoike", "email": "mailto:henrynyoikedev@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE"}, "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Machakos"}, "knowsAbout": ["Machine learning", "Python", "PyTorch", "scikit-learn", "Linux"], "sameAs": ["https://github.com/henrynyoike", "https://www.linkedin.com/in/henry-nyoike-a56b54379"]}</script>
-<title>Henry N. Nyoike | Software and AI Engineering</title>
+<title>Henry N. Nyoike | Software, Machine Learning and AI Engineering</title>
 <style>
 :root{--bg:#f6f3ec;--ink:#1c1b19;--mute:#625e55;--line:#d6d0c3;--acc:#1f5f4a;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -87,8 +87,8 @@ footer{padding:48px 0 56px;color:var(--mute);font-size:.95rem}
     <dt>Name</dt><dd>Henry Ndirangu Nyoike</dd>
     <dt>Based in</dt><dd>Nairobi, Kenya</dd>
     <dt>Studying</dt><dd>B.Sc. Electrical and Electronic Engineering, University of Machakos</dd>
-    <dt>Looking for</dt><dd>Software and AI engineering roles</dd>
-    <dt>Works with</dt><dd>Python, NumPy, scikit-learn, PyTorch, Git, Docker, Linux</dd>
+    <dt>Looking for</dt><dd>Software, Machine Learning and AI engineering roles</dd>
+    <dt>Works with</dt><dd>Python, NumPy, Scikit-learn, PyTorch, Git, Docker, Linux , Django , FastAPI</dd>
     <dt>Email</dt><dd><a href="mailto:henrynyoikedev@gmail.com">henrynyoikedev@gmail.com</a></dd>
   </dl>
 </header>
@@ -100,10 +100,11 @@ footer{padding:48px 0 56px;color:var(--mute);font-size:.95rem}
   <article>
     <h3>MlBites</h3>
     <p class="meta">Python, NumPy. A machine learning library, written from scratch.</p>
-    <p>In order to understand algorithms deeply , I built a python package with scikit-learn-style interface and only NumPy.</p>
+    <p>In order to understand machine learning algorithms deeply , I built a python package with scikit-learn-style interface using only NumPy.</p>
     <ul>
       <li>It included algorithms like; Logistic regression, linear regression, KNN, k-means, Gaussian Naive Bayes, and decision trees.</li>
       <li>I ran each one against scikit-learn on the same data. The results match to within negligible numerical differences.</li>
+      <li>I made it modular in a way that each model class or function is independent and can be swapped at anytime without breaking the whole package.</li>
     </ul>
     <p class="code"><a href="https://github.com/henrynyoike/mlbites" rel="noopener">github.com/henrynyoike/mlbites</a></p>
   </article>
@@ -115,7 +116,7 @@ footer{padding:48px 0 56px;color:var(--mute);font-size:.95rem}
     <ul>
       <li>Shows row and column counts, missing values, and duplicates as soon as a file is uploaded.</li>
       <li>Removes duplicates and missing values, fills gaps with column means, normalizes numbers, and encodes categories.</li>
-      <li>Draws line, bar, area, scatter, and map charts. The processing code is its own package, and there is a Dockerfile.</li>
+      <li>Draws line, bar, area, scatter, and map charts. The processing code is its own package, and also includes a Dockerfile.</li>
     </ul>
     <p class="code"><a href="https://github.com/henrynyoike/csv-automation-engine" rel="noopener">github.com/henrynyoike/csv-automation-engine</a></p>
   </article>
@@ -123,7 +124,7 @@ footer{padding:48px 0 56px;color:var(--mute);font-size:.95rem}
   <article>
     <h3>Homer and Bart Classifier</h3>
     <p class="meta">Python, PyTorch, torchvision. An image classifier.</p>
-    <p>A small CNN that tells Homer Simpson from Bart Simpson. I trained it for only 15 epochs on 215 images and tested it on 53 it had never seen: 77% accuracy, 0.74 precision, 0.67 recall, and an F1-score of 0.70 with the small iteration.</p>
+    <p>A small CNN that tells Homer Simpson from Bart Simpson. I trained it for only 15 epochs on 215 images and tested it on 53 it had never seen: 89% accuracy, 0.84 precision, 0.87 recall, and an F1-score of 0.80 with the small iteration.</p>
     <p class="code"><a href="https://github.com/henrynyoike/homer-bart-cnn-classifier" rel="noopener">github.com/henrynyoike/homer-bart-cnn-classifier</a></p>
   </article>
 
@@ -137,15 +138,15 @@ footer{padding:48px 0 56px;color:var(--mute);font-size:.95rem}
 
 <section id="about">
   <h2>About</h2>
-  <p>I started learning coding in 2020 during the epidemic. Outside my coursework I teach myself programming, Linux, and AI engineering, and most of what I know comes from building things and checking them against something trusted.</p>
-  <p>I've taken part in three hackathons in Nairobi, I'm a member of the Huawei Developer Club at school, and I finished a Basic AI course in January 2026. I'm also interested in financial markets, open source, and electronics.</p>
+  <p>Coding is my Passion. Outside my coursework I teach myself programming, Linux, ML and AI engineering, and most of what I know comes from building things from scratch and reverse engineering opensource applications and tools.</p>
+  <p>I've taken part in a lot hackathons and competitions in Nairobi and also an active member of the Huawei Developers Club in University . I'm also interested in financial markets, open source, and electronics.</p>
   <div class="cols" style="margin-top:26px">
     <div>
       <h3>Skills</h3>
       <ul class="list">
-        <li>Programming<span>Python, C, Go</span></li>
-        <li>Machine learning<span>scikit-learn, PyTorch, PySpark, NumPy, pandas</span></li>
-        <li>Tools<span>Git, GitHub, Linux, Docker, Streamlit</span></li>
+        <li>Programming<span>Python, C, Go, SQL </span></li>
+        <li>Machine learning<span>Scikit-learn, PyTorch, PySpark, NumPy, Pandas, XGBoost </span></li>
+        <li>Tools<span>Git, GitHub, Linux, Docker, Streamlit , Django</span></li>
       </ul>
     </div>
     <div>
@@ -161,9 +162,9 @@ footer{padding:48px 0 56px;color:var(--mute);font-size:.95rem}
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>If you're hiring for software or AI engineering and my work looks like a fit, write to me at <a href="mailto:henrynyoikedev@gmail.com">henrynyoikedev@gmail.com</a>. I'm also on <a href="https://www.linkedin.com/in/henry-nyoike-a56b54379" rel="noopener">LinkedIn</a>.</p>
+  <p>If you're hiring for Software, Machine Learning or AI engineering and my work looks like a fit, write to me at <a href="mailto:henrynyoikedev@gmail.com">henrynyoikedev@gmail.com</a>. I'm also on <a href="https://www.linkedin.com/in/henry-nyoike-a56b54379" rel="noopener">LinkedIn</a>.</p>
 </section>
 </main>
-<footer><div class="wrap">Henry Ndirangu Nyoike, Nairobi, Kenya</div></footer>
+<footer><div class="wrap">Henry Ndirangu Nyoike, Nairobi - 00100, Kenya</div></footer>
 </body>
 </html>
